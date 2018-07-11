@@ -1,14 +1,21 @@
+*{
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
 html, body{
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	padding: 0;
+	margin: 0 !important;
+	padding: 0 !important;
     background-color: #D7D7D7;
 }
 
 header {
 	width: 100%;
-	height: 40%;
+	height: 35%;
 }
 
 #header_img {
@@ -20,7 +27,7 @@ header {
 
 #menu {
     width: 100%;
-    height: 14%;
+    height: 12%;
     background-color: white;
     border: 1px solid #C8C8C8;
     display: flex;
@@ -45,35 +52,33 @@ header {
 }
 
 /*-----------------------------*/
-
-#left {
-	width: 20%;
-	height: 100%;
-    margin: 17px auto auto 125px;
-    float: left;
-    border: 1px solid #C8C8C8;
-	background-color: white;
-}
-
 #foto{
-    width: 230px;
-    height: 230px;
+    width: 90%;
+    height: 20%;
     margin: 17px auto auto ;
     border: 1px solid #C8C8C8;
 }
 
 section{
-    width: 60%;
+    width: 90%;
     height: 100%;
-    margin-top: 17px;
-    margin-right: 125px;
-    float: right;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #D7D7D7;
     display: flex;
+    justify-content: space-around;
+}
+
+#left {
+    width: 19%;
+    height: 100%;
+    border: 1px solid #C8C8C8;
+    background-color: white;
 }
 
 #center {
-    width: 60%;
+    width: 55%;
     height: 100%;
     background-color: #D7D7D7;
 }
@@ -108,12 +113,116 @@ section{
     margin-left: 7px;
     border: 1px solid #C8C8C8;
 }
+
+
+#friends {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #C8C8C8;
+    background-color: white;
+ }
+
+#friends_menu {
+    width: 100%;
+    height: 4%;
+    display: flex;
+
+}
+
+#contacts {
+    width: 50%;
+    height: 100%;
+    border-top: 1px solid #C8C8C8;
+    border-left: 1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+#music {
+    width: 50%;
+    height: 100%;
+    border-top: 1px solid #C8C8C8;
+    border-left: 1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+#friends_section {
+    width: 100%;
+    height: 96%;
+}
+
+#cont_people {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;    
+}
+
+
+#music_groups {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.people{
+    width: 75%;
+    height: 35px;
+    display: flex;
+    background-color: white;
+    border: 1px solid #C8C8C8;
+    margin-bottom: 16px;
+}
+
+.people_foto {
+    width: 25px;
+    height: 25px;
+    margin-top: 4px;
+    margin-left: 2.6px;
+    border: 1px solid #C8C8C8;
+}
+
+.people_name {
+    width: 100px;
+    height: 15px;
+    margin-top: 9px;
+    margin-left: 5px;
+    border:1px solid #C8C8C8;
+}
+
+.group{
+    width: 75%;
+    height: 35px;
+    display: flex;
+    background-color: white;
+    border: 1px solid #C8C8C8;
+    margin-bottom: 16px;
+}
+
+
+.group_name {
+    width: 100px;
+    height: 15px;
+    margin-top: 9px;
+    margin: auto;
+    border:1px solid #C8C8C8;
+}
+
 /*---------------------------*/
+
 .buttons_center {
     width: 150px;
     height: 40px;
     margin-top: 9px;
-    margin-left: 160px;
+    margin-left: 300px;
     display: flex;
 }
 
@@ -155,11 +264,3 @@ section{
     height: 20%;
     background-color: white;
 }
-
-#friends {
-    width: 30%;
-    height: 100%;
-    margin-left: 35px;
-    border: 1px solid #C8C8C8;
-    background-color: white;
- }
