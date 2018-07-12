@@ -251,16 +251,38 @@ section{
     margin: auto;
 }
 
-.people:hover {
+.people_hover {
     animation-name: slide_stat_left;
     animation-duration: 1s;
     left: 15px;
 }
 
-.people:hover + .people_status {
+.people_hover + .people_status {
     animation-name: slide_stat;
     animation-duration: 1s;
     right: 15px;
+}
+
+.people:hover {
+    animation-name: slide_stat_right;
+    animation-duration: 1s;
+    left: 0;
+}
+
+.people:hover + .people_status {
+    animation-name: slide_status_right;
+    animation-duration: 1s;
+    right: 0;
+}
+
+@keyframes slide_stat_right {
+    from {left: 15px;}
+    to {left: : 0;}
+}
+
+@keyframes slide_status_right {
+    from {right: : 15px;}
+    to {right: : : 0;}
 }
 
 @keyframes slide_stat {
@@ -295,7 +317,7 @@ section{
     margin-bottom: 0;
     display: none;
 }
-
+/*---------------------------------*/
 .group:hover + .group_style{
     animation-name: slide;
     animation-duration: 1s;

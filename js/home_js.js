@@ -30,11 +30,21 @@ function scroll() {
 	}
 }
 
+function press_contacts(){
+	var people = document.getElementsByClassName('people');
+	for(var i = 0;i<people.length; i++){
+		people[i].classList.add("people_hover");
+	}
+}
 
 window.onload = function (){
 	document.getElementById('contacts').style = "border-bottom-width:0";
 	document.getElementById('music_groups').style.display = "none";
 	document.getElementById('music').onclick = music;
-	document.getElementById('contacts').onclick = contacts;
+	document.getElementById('contacts').onclick = function(){
+		contacts();
+		press_contacts();
+	}
 	window.onscroll = scroll;
+	press_contacts();
 };
