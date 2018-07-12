@@ -47,6 +47,17 @@ header {
 
 /*-----------------------------*/
 
+.menu_name_img img {
+    height: 30px;
+    width: 30px;
+    margin-top: -6px;
+}
+
+.menu_name_img {
+    cursor: default !important;
+    border: none !important;
+}
+
 #btn-group {
     height: 100%;
     margin: auto;

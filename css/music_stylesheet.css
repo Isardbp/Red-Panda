@@ -46,6 +46,16 @@ header {
 }
 
 /*-----------------------------*/
+.menu_name_img img {
+    height: 30px;
+    width: 30px;
+    margin-top: -6px;
+}
+
+.menu_name_img {
+    cursor: default !important;
+    border: none !important;
+}
 
 #btn-group {
     height: 100%;
@@ -65,7 +75,7 @@ header {
     text-decoration: none;
 }
 
-#btn-group > a:nth-child(3) div {
+#btn-group > a:nth-child(4) div {
     color: #CB3131;
     border-bottom: 1px solid #CB3131;
 }
