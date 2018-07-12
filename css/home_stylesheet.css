@@ -23,12 +23,19 @@ header {
     height: 80%;
     background-color: white;
     border: 1px solid #C8C8C8;
+    border-bottom-color: #CB3131;
+}
+
+#header_img img {
+    width: 100%;
+    height: 100%;
 }
 
 #menu {
     width: 100%;
-    height: 12%;
+    height: 40px;
     background-color: white;
+    position: absolute;
     border: 1px solid #C8C8C8;
     display: flex;
 }
@@ -36,19 +43,26 @@ header {
 /*-----------------------------*/
 
 #btn-group {
+    height: 100%;
     margin: auto;
+    display: flex;
 }
 
-#btn-group button {
+#btn-group div {
     background-color: white;
     height: 100%;
-    border: 1px solid #C8C8C8;
     color: black;
     padding: 10px 24px;
 }
 
-#btn-group button:hover {
-    background-color: #C8C8C8;
+#btn-group > div:first-child {
+    color: #CB3131;
+    border-bottom: 1px solid #CB3131;
+}
+
+#btn-group div:hover {
+    color: #CB3131;
+    border-bottom: 1px solid #CB3131;
 }
 
 /*-----------------------------*/
@@ -56,7 +70,25 @@ header {
     width: 90%;
     height: 30%;
     margin: 17px auto auto ;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
+}
+
+#foto img {
+    width: 100%;
+    height: 100%;
+}
+
+#name_left {
+    width: 90%;
+    height: 6%;
+    margin: 10px auto auto;
+    border-bottom: 1px solid #CB3131;
+}
+
+#name_left p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
 }
 
 section{
@@ -73,7 +105,8 @@ section{
 #left {
     width: 19%;
     height: 100%;
-    border: 1px solid #C8C8C8;
+    /* border: 1px solid #C8C8C8; */
+    border: 1px solid #CB3131;
     background-color: white;
 }
 
@@ -92,21 +125,30 @@ section{
 
 }
 
+#friends_menu p{
+    margin-top: 2px;
+    text-align: center;
+}
+
 #contacts {
     width: 50%;
     height: 100%;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
+    color: #CB3131;
 }
 
 #music {
     width: 50%;
     height: 100%;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
 }
 
 #friends_section {
     width: 100%;
     height: 96%;
+    border: 1px solid #CB3131;
+    border-top: 0;
+
 }
 
 #cont_people {
@@ -119,6 +161,36 @@ section{
     background-color: white;    
 }
 
+#cont_people p {
+    margin-top: -3px;
+    text-align: left;
+}
+
+#music_groups p {
+    margin-top: -3px;
+    text-align: center;
+}
+.people_foto {
+    width: 25px;
+    height: 25px;
+    margin-top: 4px;
+    margin-left: 2.6px;
+    border: 1px solid #C8C8C8;
+}
+
+.people_name {
+    width: 100px;
+    height: 15px;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+
+.group_name {
+    width: 150px;
+    height: 15px;
+    margin: auto;
+}
 
 #music_groups {
     width: 100%;
@@ -136,7 +208,7 @@ section{
     display: flex;
     background-color: white;
     z-index: 1;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
     margin-bottom: 16px;
     position: relative;
 }
@@ -188,28 +260,14 @@ section{
 }
 
 /*-----------------------------*/
-.people_foto {
-    width: 25px;
-    height: 25px;
-    margin-top: 4px;
-    margin-left: 2.6px;
-    border: 1px solid #C8C8C8;
-}
 
-.people_name {
-    width: 100px;
-    height: 15px;
-    margin-top: 9px;
-    margin-left: 5px;
-    border:1px solid #C8C8C8;
-}
 /*----------------------------*/
 .group{
     width: 75%;
     height: 35px;
     display: flex;
     background-color: white;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
     z-index: 1;
     margin-bottom: 16px;
 }
@@ -218,7 +276,7 @@ section{
     width: 75%;
     height: 35px;
     background-color: white;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
     z-index: 0;
     position: relative;
     margin-bottom: 0;
@@ -241,12 +299,6 @@ section{
     to {top: -17px;}
 }
 /*---------------------------------*/
-.group_name {
-    width: 100px;
-    height: 15px;
-    margin: auto;
-    border:1px solid #C8C8C8;
-}
 
 /*---------------------------*/
 
@@ -254,7 +306,7 @@ section{
     width: 100%;
     height: 25%;
     display: flex;
-    border-bottom: 1px solid #C8C8C8;
+    border-bottom: 1px solid #CB3131;
     background-color: white;
     justify-content: space-between;
 }
@@ -263,6 +315,11 @@ section{
     width: 50%;
     height: 100%;
     display: flex;
+}
+
+.header_img_name img {
+    width: 100%;
+    height: 100%;
 }
 
 #center {
@@ -275,7 +332,7 @@ section{
     width: 100%;
     height: 230px;
     margin: auto auto;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
 }
 
 .center_img {
@@ -283,7 +340,7 @@ section{
     height: 40px;
     margin-left: 10px;
     margin-top:9px;
-    border: 1px solid #C8C8C8;
+    border: 1px solid #CB3131;
 }
 
 .center_name {
@@ -291,7 +348,13 @@ section{
     height: 20px;
     margin-top: 19px;
     margin-left: 7px;
-    border: 1px solid #C8C8C8;
+    border-right: 1px solid #CB3131;
+}
+
+.center_name p{
+    margin-left: -7px;
+    margin-top: 0;
+    text-align: center;
 }
 
 .buttons_center {
@@ -330,12 +393,12 @@ section{
 .section {
     width: 100%;
     height: 60%;
-    border-bottom: 1px solid #C8C8C8;
+    border-bottom: 1px solid #CB3131;
     background-color: white;
 }
 
 .footer {
     width: 100%;
-    height: 20%;
+    height: 15%;
     background-color: white;
 }
