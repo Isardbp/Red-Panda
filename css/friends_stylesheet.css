@@ -60,12 +60,11 @@ header {
     padding: 10px 24px;
     cursor: pointer;
 }
-
 #btn-group > a {
     text-decoration: none;
 }
 
-#btn-group > a:nth-child(3) div {
+#btn-group > a:nth-child(2) div{
     color: #CB3131;
     border-bottom: 1px solid #CB3131;
 }
@@ -181,5 +180,4 @@ section{
     background-color: white;
     border: 1px solid #CB3131;
     border-top: 1px solid black;
-
 }
