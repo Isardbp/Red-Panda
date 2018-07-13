@@ -72,9 +72,14 @@ function press_Write(){
 
 function press_send(){
 	document.getElementById('myModal').classList.add('modal_desemerge');
-	setTimeout(function(){ document.getElementById('modal').style.display = "none";}, 1000);
+	setTimeout(desemergejs, 300);
 }
 
+function desemergejs(){
+	document.getElementById('modal').style.display = "none";
+	document.getElementById('myModal').classList.remove('modal_desemerge');
+	document.getElementById('myModal').classList.remove('modal_emerge');
+}
 
 function press_contacts(){
 	var people = document.getElementsByClassName('people');

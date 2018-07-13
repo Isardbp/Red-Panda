@@ -31,12 +31,12 @@ html, body{
 
 .modal_emerge{
     animation-name: emerge;
-    animation-duration: 1s;
+    animation-duration: .75s;
 }
 
 .modal_desemerge{
     animation-name: desemerge;
-    animation-duration: 1s;
+    animation-duration: .5s;
 }
 
 .post_input {
