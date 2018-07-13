@@ -25,12 +25,17 @@ html, body{
 }
 #myModal {
     width: 50%;
-    
+    margin:auto !important;
     position:relative;
 }
 
 .modal_emerge{
     animation-name: emerge;
+    animation-duration: 1s;
+}
+
+.modal_desemerge{
+    animation-name: desemerge;
     animation-duration: 1s;
 }
 
@@ -53,6 +58,10 @@ html, body{
     to {top:0; opacity: 1}
 }
 
+@keyframes desemerge {
+    from {top: 0; opacity: 1}
+    to {top:-600px; opacity: 0}
+}
 
 header {
 	width: 100%;
@@ -440,6 +449,7 @@ section{
     width: 100%;
     height: 150px;
     margin: auto auto;
+    margin-bottom: 15px;
     border: 1px solid #CB3131;
 }
 

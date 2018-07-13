@@ -70,6 +70,11 @@ function press_Write(){
 	document.getElementById('myModal').classList.add('modal_emerge');
 }
 
+function press_send(){
+	document.getElementById('myModal').classList.add('modal_desemerge');
+	setTimeout(function(){ document.getElementById('modal').style.display = "none";}, 1000);
+}
+
 
 function press_contacts(){
 	var people = document.getElementsByClassName('people');
@@ -96,7 +101,11 @@ window.onload = function (){
 	btn.onclick = function(){
 		modal.style.display = "flex";
 		press_Write();
+	}
 
+	document.getElementById('send_but').onclick = function(){
+		press_send();
+		post_mss();
 	}
 	span.onclick = function(){
 		modal.style.display = "none";
@@ -106,5 +115,4 @@ window.onload = function (){
 			modal.style.display = "none";
 		}
 	}
-	document.getElementById('send_but').onclick = post_mss;
 };
