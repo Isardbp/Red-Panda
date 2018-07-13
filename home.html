@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="css/home_stylesheet.css"/>
     <script src="jquery/jquery.min.js"></script>
     <script type="text/javascript" src="js/home_js.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
     <script src="bootstrap/js/bootstrap.min.js"></script>-->
 </head>
 <body>
@@ -19,10 +20,28 @@
                 <a href="friends.html"><div>Friends</div></a>
                 <div class="menu_name_img"><img src="fotos/perfil_2.png"></div>
                 <a href="music.html"><div>Music</div></a>
-                <div>Config</div>
+                <div id="write" class="modal">Write</div>
             </div>
         </div>
 	</header>
+
+
+    <div id="modal">
+        <div class="mss" id="myModal">
+            <div class="header">
+                <div class="header_img_name">
+                    <div class="center_img"><img src="fotos/perfil_2.png"></div>
+                    <div class="center_name"><p>Isardbp</p></div>
+                </div>
+                <div class="buttons_center">
+                    <button class="edit_but">Send</button>
+                    <button class="delete_but close">Delete</button>
+                </div>
+            </div>
+            <div class="section"><textarea class="post_input" maxlength="250"> </textarea></div>
+        </div>
+    </div>
+
 
     <section>
         <aside id="left">
@@ -44,7 +63,6 @@
                     </div>
                 </div>
                 <div class="section"></div>
-                <div class="footer"></div>
             </div>
 
         </div>
@@ -64,7 +82,7 @@
                         </div>
                     </div>
                     <div class="people_status">
-                        <div class="people_stat"><img src="fotos/green_btn.png"></div>
+                        <div class="people_stat"><i class="fa fa-circle fa-sm status_online"></i></div>
                     </div>
                     <div class="people red">
                         <div class="people_foto"></div>
@@ -73,7 +91,7 @@
                         </div>
                     </div>
                     <div class="people_status">
-                        <div class="people_stat"><img src="fotos/red_btn.png"></div>
+                        <div class="people_stat"><i class="fa fa-circle fa-sm status_offline"></i></div>
                     </div>
                     <div class="people green">
                         <div class="people_foto"></div>
@@ -82,7 +100,7 @@
                         </div>
                     </div>
                     <div class="people_status">
-                        <div class="people_stat"><img src="fotos/green_btn.png"></div>
+                        <div class="people_stat"><i class="fa fa-circle fa-sm status_online"></i></div>
                     </div>
                     <div class="people green">
                         <div class="people_foto"></div>
@@ -91,7 +109,7 @@
                         </div>
                     </div>
                     <div class="people_status">
-                        <div class="people_stat"><img src="fotos/green_btn.png"></div>
+                        <div class="people_stat"><i class="fa fa-circle fa-sm status_online"></i></div>
                     </div>
                     <div class="people red">
                         <div class="people_foto"></div>
@@ -100,7 +118,7 @@
                         </div>
                     </div>
                     <div class="people_status">
-                        <div class="people_stat"><img src="fotos/red_btn.png"></div>
+                        <div class="people_stat"><i class="fa fa-circle fa-sm status_offline"></i></div>
                     </div>
                 </div>
                 
