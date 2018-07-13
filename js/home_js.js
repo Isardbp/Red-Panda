@@ -1,3 +1,11 @@
+String.prototype.format = function () {
+    var a = this;
+    for (var k in arguments) {
+        a = a.replace(new RegExp("\\{" + k + "\\}", 'g'), arguments[k]);
+    }
+    return a
+}
+
 function music() {
 	document.getElementById('cont_people').style.display = "none";
 	document.getElementById('music_groups').style.display = "flex";
@@ -38,6 +46,7 @@ function modal(){
 
 
 function post_mss() {
+	var txt = document.getElementById("post_input").value;
 	var template= `<div class="mss">
                 <div class="header">
                     <div class="header_img_name">
@@ -49,12 +58,12 @@ function post_mss() {
                         <button class="delete_but">Delete</button>
                     </div>
                 </div>
-                <div class="section"></div>
-                <div class="footer"></div>
-            </div>`
+                <div class="section"><p> {0} </p></div>
+            </div>
+			`.format(txt);
 
-
-
+	$("#center").append(template);
+	document.getElementById("post_input").value= "";
 }
 
 function press_Write(){
@@ -97,5 +106,5 @@ window.onload = function (){
 			modal.style.display = "none";
 		}
 	}
-
+	document.getElementById('send_but').onclick = post_mss;
 };
