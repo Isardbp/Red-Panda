@@ -4,7 +4,7 @@ String.prototype.format = function () {
         a = a.replace(new RegExp("\\{" + k + "\\}", 'g'), arguments[k]);
     }
     return a
-}
+};
 
 function music() {
 	document.getElementById('cont_people').style.display = "none";
@@ -27,8 +27,6 @@ function contacts() {
 function scroll() {
 	var h = document.body.getBoundingClientRect().height;
 	var lim = h * 0.35 * 0.80;
-	console.log(document.documentElement.scrollTop);
-	console.log(document.documentElement.scrollTop >1);
 	if (document.body.scrollTop > lim || document.documentElement.scrollTop > lim){
 		document.getElementById("menu").style.position = "fixed";
 	}
@@ -44,10 +42,11 @@ function modal(){
 
 }
 
-
+var i = 2;
 function post_mss() {
 	var txt = document.getElementById("post_input").value;
-	var template= `<div class="mss">
+	// language=HTML
+    var template= `<div class="mss" >
                 <div class="header">
                     <div class="header_img_name">
                         <div class="center_img"><img src="fotos/perfil_2.png"></div>
@@ -55,7 +54,6 @@ function post_mss() {
                     </div>
                     <div class="buttons_center">
                         <button class="edit_but">Edit</button>
-                        <button class="delete_but">Delete</button>
                     </div>
                 </div>
                 <div class="section"><p> {0} </p></div>
@@ -64,7 +62,17 @@ function post_mss() {
 
 	$("#center").append(template);
 	document.getElementById("post_input").value= "";
+	i++;
 }
+
+
+	$(document).ready(function () {
+	    $(".delete_but_com").click(function () {
+	        $(".mss").click(function () {
+                    $(this).remove();
+            })
+        });
+    });
 
 function press_Write(){
 	document.getElementById('myModal').classList.add('modal_emerge');
@@ -95,7 +103,7 @@ window.onload = function (){
 	document.getElementById('contacts').onclick = function(){
 		contacts();
 		press_contacts();
-	}
+	};
 	window.onscroll = scroll;
 	press_contacts();
 
@@ -106,18 +114,18 @@ window.onload = function (){
 	btn.onclick = function(){
 		modal.style.display = "flex";
 		press_Write();
-	}
+	};
 
 	document.getElementById('send_but').onclick = function(){
 		press_send();
 		post_mss();
-	}
+	};
 	span.onclick = function(){
 		modal.style.display = "none";
-	}
+	};
 	window.onclick = function(event) {
-		if (event.target == modal){
+		if (event.target === modal){
 			modal.style.display = "none";
 		}
-	}
+	};
 };

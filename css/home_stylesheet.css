@@ -158,6 +158,39 @@ header {
     margin-top: 0;
 }
 
+#delete_nodelete{
+    display: flex;
+    justify-content: center;
+}
+
+.delete_but_com {
+    width: 65px;
+    height: 25px;
+    margin-top:7px;
+    margin-left: 4px;
+    border: 1px solid #C8C8C8;
+}
+
+.delete_but_com:hover {
+    background-color: red;
+    color: white;
+}
+
+.no_delete_but_com {
+    width: 80px;
+    height: 25px;
+    margin-top:7px;
+    margin-left: 4px;
+    border: 1px solid #C8C8C8;
+}
+
+.no_delete_but_com:hover {
+    background-color: green;
+    color: black;
+}
+
+/*-------------------------------------*/
+
 section{
     width: 90%;
     height: 100%;
@@ -490,6 +523,11 @@ section{
     border: 1px solid #C8C8C8;
 }
 
+.edit_but:hover {
+    background-color: #C8C8C8;
+    color: white;
+}
+
 .delete_but {
     width: 65px;
     height: 25px;
@@ -498,10 +536,6 @@ section{
     border: 1px solid #C8C8C8;
 }
 
-.edit_but:hover {
-    background-color: #C8C8C8;
-    color: white;
-}
 .delete_but:hover {
     background-color: #C8C8C8;
     color: white;
@@ -513,4 +547,9 @@ section{
     height: 60%;
     background-color: white;
     padding: 5px;
+}
+
+.section p {
+    margin-top: 4%;
+    margin-left: 10px;
 }
