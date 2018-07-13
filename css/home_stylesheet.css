@@ -34,6 +34,14 @@ html, body{
     animation-duration: .75s;
 }
 
+.mss_modal {
+    width: 100%;
+    height: 150px;
+    margin: auto auto;
+    margin-bottom: 15px;
+    border: 1px solid #CB3131;
+}
+
 .modal_desemerge{
     animation-name: desemerge;
     animation-duration: .5s;
@@ -477,7 +485,7 @@ section{
     height: 100%;
     background-color: #D7D7D7;
 }
-
+/*-------------------------*/
 .mss {
     width: 100%;
     height: 150px;
@@ -485,7 +493,7 @@ section{
     margin-bottom: 15px;
     border: 1px solid #CB3131;
 }
-
+/*--------------------------*/
 .center_img {
     width: 40px;
     height: 40px;

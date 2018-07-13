@@ -65,6 +65,10 @@ function post_mss() {
 	i++;
 }
 
+//function delete_but_red(){
+//	document.getElementsByClassName('delete_but_com').style.backgroundColor = "red";
+//	document.getElementsByClassName('no_delete_but_com').style.backgroundColor = "none";
+//}
 
 	$(document).ready(function () {
 	    $(".delete_but_com").click(function () {
@@ -128,4 +132,6 @@ window.onload = function (){
 			modal.style.display = "none";
 		}
 	};
+
+//document.getElementsByClassName('delete_but_com').onclick = delete_but_red;
 };
