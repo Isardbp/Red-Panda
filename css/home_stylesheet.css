@@ -47,6 +47,11 @@ html, body{
     animation-duration: .5s;
 }
 
+.modal_desemerge_down{
+    animation-name: desemerge_down;
+    animation-duration: .5s;
+}
+
 #send_but{
     width: 65px;
     height: 25px;
@@ -77,6 +82,11 @@ html, body{
 @keyframes desemerge {
     from {top: 0; opacity: 1}
     to {top:-600px; opacity: 0}
+}
+
+@keyframes desemerge_down {
+    from {top: 0; opacity: 1}
+    to {top: 600px; opacity: 0}
 }
 
 header {
@@ -185,6 +195,16 @@ header {
     margin-top:7px;
     margin-left: 4px;
     border: 1px solid #C8C8C8;
+}
+
+.delete_but_com_press{
+    background-color: red;
+    color: white;
+}
+
+.no_delete_but_com_press{
+    background-color: green;
+    color: black;
 }
 
 .delete_but_com:hover {

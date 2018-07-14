@@ -35,12 +35,6 @@ function scroll() {
 	}
 }
 
-function modal(){
-	var modal = document.getElementById('myModal');
-	var btn = document.getElementById('write');
-	var span = document.getElementsByClassName("close")[0];
-
-}
 
 var i = 2;
 function post_mss() {
@@ -72,11 +66,20 @@ function post_mss() {
 
 	$(document).ready(function () {
 	    $(".delete_but_com").click(function () {
+	    	$(this).addClass('delete_but_com_press');
+	        $(".no_delete_but_com").removeClass('no_delete_but_com_press');
+
 	        $(".mss").click(function () {
                     $(this).remove();
             })
         });
+	    $(".no_delete_but_com").click(function () {
+			$(this).addClass('no_delete_but_com_press');
+	        $(".delete_but_com").removeClass('delete_but_com_press');
+        })
     });
+
+
 
 function press_Write(){
 	document.getElementById('myModal').classList.add('modal_emerge');
@@ -92,6 +95,20 @@ function desemergejs(){
 	document.getElementById('myModal').classList.remove('modal_desemerge');
 	document.getElementById('myModal').classList.remove('modal_emerge');
 }
+
+
+function press_delete(){
+	document.getElementById('myModal').classList.add('modal_desemerge_down');
+	setTimeout(desemergejs_down, 300);
+}
+
+function desemergejs_down(){
+	document.getElementById('modal').style.display = "none";
+	document.getElementById('myModal').classList.remove('modal_desemerge_down');
+	document.getElementById('myModal').classList.remove('modal_emerge');
+}
+
+
 
 function press_contacts(){
 	var people = document.getElementsByClassName('people');
@@ -125,7 +142,7 @@ window.onload = function (){
 		post_mss();
 	};
 	span.onclick = function(){
-		modal.style.display = "none";
+		press_delete();
 	};
 	window.onclick = function(event) {
 		if (event.target === modal){
