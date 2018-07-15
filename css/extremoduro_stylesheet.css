@@ -106,7 +106,7 @@ header {
 #header_img img {
     height: 1300px;
     width: auto;
-    margin-top: -400px;
+    margin-top: -600px;
 }
 
 #menu {
@@ -148,11 +148,6 @@ header {
 
 #btn-group > a {
     text-decoration: none;
-}
-
-#btn-group > a:first-child div {
-    color: #CB3131;
-    border-bottom: 1px solid #CB3131;
 }
 
 #btn-group div:hover {
@@ -310,11 +305,6 @@ section{
     background-color: white;    
 }
 
-#cont_people a {
-    width: 68%;
-    text-decoration: none;
-}
-
 #cont_people p {
     margin-top: -3px;
     text-align: left;
@@ -360,9 +350,9 @@ section{
     align-items: center;
     background-color: white;
 }
-/*------------people---------------*/
+/*---------------------------*/
 .people{
-    width: 100%;
+    width: 75%;
     height: 35px;
     display: flex;
     background-color: white;
@@ -394,7 +384,6 @@ section{
 
 .people_stat i {
     margin: auto;
-    margin-top: 10px;
 }
 
 .status_online{
@@ -459,16 +448,6 @@ section{
 /*-----------------------------*/
 
 /*----------------------------*/
-
-#music_groups a {
-    height: 100%;
-    width: 100%;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-
-
 .group{
     width: 90%;
     height: 35px;
