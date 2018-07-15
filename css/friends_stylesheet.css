@@ -86,13 +86,14 @@ header {
 
 /*-----------------------------*/
 #foto{
-    width: 180px;
-    height: 180px;
+    width: 55%;
+    height: auto;
     margin: 17px auto auto ;
     border: 1px solid black;
 }
 
 #foto img {
+    margin-bottom: -4px;
     width: 100%;
     height: 100%;
 }
@@ -121,10 +122,25 @@ section{
     justify-content: space-around;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #left {
     width: 19%;
     height: 100%;
     /* border: 1px solid #C8C8C8; */
+    margin-right: 805px;
     border: 1px solid #CB3131;
     background-color: white;
 }
@@ -150,16 +166,18 @@ section{
 }
 
 #center {
-    width: 55%;
+    width: 30%;
     height: 100%;
     background-color: #D7D7D7;
 }
 
 .mss {
-    width: 120%;
+    width: 900px;
     height: 100%;
-    margin-left: -100px;
+    margin-left: -800px;
 }
+
+
 
 .center_name {
     width: 100px;
@@ -190,4 +208,25 @@ section{
     background-color: white;
     border: 1px solid #CB3131;
     border-top: 1px solid black;
+
+}
+
+.friends {
+    width: 29.5%;
+    height: 238.406px;
+    position: relative;
+    float: left;
+    margin: 15px;
+    border: 1px solid black;
+}
+
+#friends_block {
+    width: 90%;
+    height: 100%;
+    margin: 15px auto auto;
+}
+
+.friends img {
+    width: 100%;
+    height: 100%;
 }

@@ -160,13 +160,14 @@ header {
 
 /*-----------------------------*/
 #foto{
-    width: 180px;
-    height: 180px;
+    width: 55%;
+    height: auto;
     margin: 17px auto auto ;
     border: 1px solid black;
 }
 
 #foto img {
+    margin-bottom: -4px;
     width: 100%;
     height: 100%;
 }
@@ -324,8 +325,13 @@ section{
     border: 1px solid #C8C8C8;
 }
 
+.people_foto img {
+    width: 100%;
+    height: 100%;
+}
+
 .people_name {
-    width: 100px;
+    width: 200px;
     height: 15px;
     margin-top: 9px;
     margin-left: 5px;
