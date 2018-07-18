@@ -37,8 +37,7 @@ html, body{
 .mss_modal {
     width: 100%;
     height: 150px;
-    margin: auto auto;
-    margin-bottom: 15px;
+    margin: auto auto 15px;
     border: 1px solid #CB3131;
 }
 
@@ -508,10 +507,9 @@ section{
 
 .header {
     width: 100%;
-    height: 40%;
+    height: 60px;
     display: flex;
     border-bottom: 1px solid black;
-    background-color: white;
     justify-content: space-between;
 }
 
@@ -535,9 +533,9 @@ section{
 /*-------------------------*/
 .mss {
     width: 100%;
-    height: 150px;
-    margin: auto auto;
-    margin-bottom: 15px;
+    height: 550px;
+    margin: auto auto 15px;
+    background-color: white;
     border: 1px solid #CB3131;
 }
 /*--------------------------*/
@@ -550,7 +548,7 @@ section{
 }
 
 .center_name {
-    width: 100px;
+    width: 200px;
     height: 20px;
     margin-top: 19px;
     margin-left: 7px;
@@ -601,12 +599,38 @@ section{
 /*-----------------------------*/
 .section {
     width: 100%;
-    height: 60%;
-    background-color: white;
+    height: 100%;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
-.section p {
-    margin-top: 4%;
+.song {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.song p{
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+
+.nom_song {
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+
+.nom_song p{
     margin-left: 10px;
+}
+
+.durada {
+    width: 15%;
+    height: 100%;
+    text-align: center;
 }
