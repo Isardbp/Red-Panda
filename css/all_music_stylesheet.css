@@ -530,25 +530,6 @@ section{
     height: 100%;
     background-color: #D7D7D7;
 }
-
-#disc {
-    width: 100%;
-    height: 40px;
-    margin-top: -30px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid black;
-}
-
-#disc div{
-    width: 150px;
-    height: 100%;
-    text-align: center;
-}
-
-#disc div p {
-    font-size: 25px;
-    padding-top: 10px;
-}
 /*-------------------------*/
 .mss {
     width: 100%;
@@ -556,10 +537,6 @@ section{
     margin: auto auto 15px;
     background-color: white;
     border: 1px solid #CB3131;
-}
-
-.iron {
-    height: 430px !important;
 }
 /*--------------------------*/
 .center_img {
