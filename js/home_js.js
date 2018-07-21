@@ -33,6 +33,7 @@ function scroll() {
 	else{
 		document.getElementById("menu").style.position = "static";
 	}
+}
 
 
 var i = 2;
@@ -124,11 +125,8 @@ window.onload = function (){
 		contacts();
 		press_contacts();
 	};
-
-	window.onload = function (){
 	window.onscroll = scroll;
 	press_contacts();
-};
 
 	var modal = document.getElementById('modal');
 	var btn = document.getElementById('write');
