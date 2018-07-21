@@ -24,6 +24,17 @@ function contacts() {
     document.getElementById('music').style.color = "Black";
 }
 
+function scroll() {
+	var h = document.body.getBoundingClientRect().height;
+	var lim = h * 0.35 * 0.80;
+	if (document.body.scrollTop > lim || document.documentElement.scrollTop > lim){
+		document.getElementById("menu").style.position = "fixed";
+	}
+	else{
+		document.getElementById("menu").style.position = "static";
+	}
+
+
 var i = 2;
 function post_mss() {
 	var txt = document.getElementById("post_input").value;
@@ -113,6 +124,11 @@ window.onload = function (){
 		contacts();
 		press_contacts();
 	};
+
+	window.onload = function (){
+	window.onscroll = scroll;
+	press_contacts();
+};
 
 	var modal = document.getElementById('modal');
 	var btn = document.getElementById('write');
